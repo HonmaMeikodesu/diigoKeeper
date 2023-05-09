@@ -16,6 +16,7 @@ export async function fetchAnnotations(requestParams: {
             headers: {
               Cookie: cookie,
             },
+            timeout: 20000,
           }
         )
       ).json()
